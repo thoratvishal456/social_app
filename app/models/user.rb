@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
   acts_as_followable
 
   has_many :posts
+
+  def self.search(input)
+    where('name ILIKE ? ', "#{input}%").as_json(only: %i[id name]) if input
+  end
 end
