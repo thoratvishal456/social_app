@@ -6,4 +6,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   include DeviseTokenAuth::Concerns::User
+
+  acts_as_follower
+  acts_as_followable
+
+  has_many :posts
 end
