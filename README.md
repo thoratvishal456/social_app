@@ -1,24 +1,24 @@
-# README
+# Rails 6 Social Media App REST API Using [Devise-Token-Auth](https://github.com/lynndylanhurley/devise_token_auth)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example of API based on Rails 6
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+If you don't have Ruby, install it (e.g., by using [rvm](https://rvm.io/) and when you finish, just run this:
 
-* System dependencies
+```sh
+gem install bundler
+bundle install
+```
 
-* Configuration
+Then configure database `PostgreSQL`. Check `config/databse.yml` and run migrations and seeds:
 
-* Database creation
+```sh
+rails db:migrate
+```
 
-* Database initialization
+## Run Server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails s
+```
