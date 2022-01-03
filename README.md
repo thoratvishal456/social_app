@@ -22,3 +22,7 @@ rails db:migrate
 ```bash
 rails s
 ```
+
+## Demo for testing
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/328eb0fa3d818aaef617?action=collection%2Fimport)
