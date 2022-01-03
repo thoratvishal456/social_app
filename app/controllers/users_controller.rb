@@ -5,8 +5,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def search
-    result = User.search(params[:input]) || []
-    render json: { data: result }, status: :ok
+    @users = User.search(params[:input]) || []
   end
 
   def follow

@@ -13,6 +13,6 @@ class User < ActiveRecord::Base
   has_many :posts
 
   def self.search(input)
-    where('name ILIKE ? ', "#{input}%").as_json(only: %i[id name]) if input
+    where('name ILIKE ? ', "#{input}%") if input
   end
 end
